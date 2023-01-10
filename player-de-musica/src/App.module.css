@@ -1,0 +1,140 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 3.2rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+
+.containerFull {
+  display: flex;
+  border-radius: 0.96rem;
+  padding: 3.8rem;
+  background-color: #2A2141;
+  display: flex;
+  flex-direction: column;
+  gap: 2.9rem;
+  width: fit-content;
+}
+
+.containerImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18.9rem;
+  height: 18.9rem;
+  border-radius: 0.6rem;
+  overflow: hidden;
+}
+
+.songData {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: flex-start;
+}
+
+.songData h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #E1E1E6;
+}
+
+.songData p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #E1E1E6;
+}
+
+.controles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.controles button {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  border: none;
+  background-color: #2A2141;
+  color: #E1E1E6;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.controles button:hover {
+  filter: brightness(0.8);
+}
+
+.progression {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.96rem;
+}
+
+.progress {
+  width: 100%;
+  height: 0.6rem;
+  background-color: #d9d9d942;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+
+.progressConcluded {
+  width: 80%;
+  height: 0.6rem;
+  background-color: #d9d9d9cb;
+}
+
+.progressTimers {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.progressTimers p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #C4C4CC;
+}
+
+.songCoverInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2.8rem;
+}
+
+.containerImageSmall {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8.4rem;
+  height: 8.4rem;
+  border-radius: 0.6rem;
+  overflow: hidden;
+}
+
+.containerImageSmall img {
+  width: 100%;
+  height: auto;
+}
