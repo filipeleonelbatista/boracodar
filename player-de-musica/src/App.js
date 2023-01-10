@@ -47,6 +47,7 @@ function App() {
       setTitle(playlist[currentIndex + 1].title)
       setArtist(playlist[currentIndex + 1].artist)
       setCurrentIndex(currentIndex + 1)
+      setDuration(0)
     } else {
       alert("Sua lista terminou!")
       handlePause();
@@ -73,6 +74,7 @@ function App() {
       setTitle(playlist[currentIndex - 1].title)
       setArtist(playlist[currentIndex - 1].artist)
       setCurrentIndex(currentIndex - 1)
+      setDuration(0)
     } else {
       const stillPlay = window.confirm("Sua Lista está na primeira musica, deseja continuar ouvindo?")
       if (stillPlay) {
@@ -84,7 +86,7 @@ function App() {
   }
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    setTimeout(() => {
       const per = (100 * audio.currentTime) / audio.duration;
       if (per <= 100) {
         setPercentual(per)
@@ -103,7 +105,7 @@ function App() {
   useEffect(() => {
     if (isUserInteract) {
       handlePlay()
-    }
+    }// eslint-disable-next-line
   }, [audio.src])
 
   return (
