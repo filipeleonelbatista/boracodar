@@ -74,7 +74,8 @@ function App() {
       setArtist(playlist[currentIndex - 1].artist)
       setCurrentIndex(currentIndex - 1)
     } else {
-      if (confirm("Sua Lista está na primeira musica, deseja continuar ouvindo?")) {
+      const stillPlay = window.confirm("Sua Lista está na primeira musica, deseja continuar ouvindo?")
+      if (stillPlay) {
         handlePlay()
       } else {
         handlePause()
