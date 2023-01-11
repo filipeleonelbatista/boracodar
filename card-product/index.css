@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: 10px) and (max-width: 720px) {
+  .container {
+    flex-direction: column !important;
+  }
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #121212;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  background-color: #D9CDF7;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  border-radius: 8px;
+  padding: 25px;
+  width: fit-content;
+  margin: 20px;
+}
+
+.product-image {
+  display: flex;
+  position: relative;
+}
+
+#action.active img {
+  width: 16px;
+}
+
+.product-image img {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+}
+
+.product-image button {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #D9CDF7;
+  border-radius: 50%;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.product-image button img {
+  width: 70%;
+  height: auto;
+}
+
+.product-image button:hover {
+  background-color: #a396c4;
+}
+
+.product-image button:active {
+  background-color: #706785;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.product-code {
+  font-size: 10pt;
+  color: #271A45;
+  font-weight: lighter;
+}
+
+.product-name {
+  font-size: 32pt;
+  color: #271A45;
+  font-weight: 600;
+  font-family: 'Crimson Pro', serif;
+}
+
+.product-price {
+  font-size: 16pt;
+  color: #271A45;
+  font-weight: lighter;
+  opacity: 0.75;
+}
+
+.product-button {
+  margin-top: 8px;
+  padding: 8px 16px;
+  border: 1px solid #271A45;
+  width: fit-content;
+  border-radius: 16px;
+  background-color: #D9CDF7;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 12pt;
+  color: #271A45;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-button:hover {
+  background-color: #a396c4;
+}
+
+.product-button:active {
+  background-color: #706785;
+}
